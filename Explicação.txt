@@ -1,0 +1,6 @@
+instale o npx create-expo-app@latest --example navigation para criar os projeto
+no terminal acesse a pasta do projeto criado cd nomedaPasta
+rode esse comando npx expo install @expo/metro-runtime
+para inicar o projeto sempre use npx expo start
+
+apos fazer isso, copie e cole os arquivos baixado para o seu projeto
