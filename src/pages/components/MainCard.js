@@ -66,7 +66,7 @@ import { Fontisto } from '@expo/vector-icons'
 
 const MainCard = ({ icon, title, texto, colorTexte }) => {
   return (
-    <View style={styles.card}>
+    <View style={[styles.card, { width: '80%' }]}>
       <Text style={[styles.icon, { color: colorTexte }]}>{icon}</Text>
       <Text style={styles.title}>{title}</Text>
       <Text style={[styles.text, { color: colorTexte }]}>{texto}</Text>
