@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderWidth: 2,
-        borderColor: '#008D85',
+        borderColor: '#32a852',
         width: 170,
         height: 170,
         borderRadius: 100,
@@ -19,8 +19,8 @@ export const styles = StyleSheet.create({
         marginTop: 60,
     },
     Image: {
-        width: 108,
-        height: 108,
+        width: 150,
+        height: 150,
     },
     form: {
         flex: 1,
@@ -51,7 +51,7 @@ export const styles = StyleSheet.create({
         padding: 10
       },
       buttonSubmit: {
-        backgroundColor: '#59BFFF',
+        backgroundColor: '#32a852',
         width: '90%',
         height: 45,
         alignItems: 'center',

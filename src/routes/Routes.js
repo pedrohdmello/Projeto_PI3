@@ -17,7 +17,7 @@ export default function Routes(){
             <Stack.Screen name='createuser' component={CreateUser}
             options={{
                 
-                title: 'Cadastrar Usuario',
+                title: 'Cadastrar Usuário',
                 headerTintColor: '#FFF',
                 headerTransparent: true
             }} />

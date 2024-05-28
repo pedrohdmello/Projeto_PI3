@@ -1,98 +1,79 @@
-import React from "react";
-import { StyleSheet, Text, View } from 'react-native'
-import { Feather } from '@expo/vector-icons'
-import { Fontisto } from '@expo/vector-icons'
+// import React from "react";
+// import { StyleSheet, Text, View } from 'react-native'
+// import { Feather } from '@expo/vector-icons'
+// import { Fontisto } from '@expo/vector-icons'
 
+// const MainCard = ({ icon, title, texto, colorTexte }) => {
+//   return (
+//     <View style={[styles.card, { width: '80%' }]}>
+//       <Text style={[styles.icon, { color: colorTexte }]}>{icon}</Text>
+//       <Text style={styles.title}>{title}</Text>
+//       <Text style={[styles.text, { color: colorTexte }]}>{texto}</Text>
+//     </View>
+//   );
+// };
 
-// const MainCard = (props) => {
-
-//   const Icon = () => {
-//     if(props.icon === 'morning'){
-//         return(
-//             <Feather style={styles.cardIcon} name="sun" size={10} color="black" />
-//         )   
-//     }
-//     if(props.icon === 'afternoon'){
-//         return(
-//             <Fontisto style={styles.cardIcon} name="day-cloudy" size={5} color="black" />
-//         )   
-//     }
-//     if(props.icon === 'night'){
-//         return(
-//             <Feather style={styles.cardIcon} name="cloud-rain" size={5} color="black" />
-//         )   
-//     }         
-// }
-
-    // return(
-    //     <View style={styles.card}>
-           
-    //        <Text>
-    //        {/* <Icon></Icon> */}
-    //        <Text style={styles.cardTitle}> {props.title}
-    //         <Text style={[styles.cardText, {color: props.colorTexte}]}> {props.texto}</Text>  
-    //         </Text>  
-    //        </Text>
-                  
-    //      </View>
-    // )
-
-
-// const styles = StyleSheet.create({   
-//     card:{    
-//       justifyContent: 'center',
-//       alignItems: 'center',
-//       borderRadius: 20,
-//       margin: 10,
-//       width: 250,
-//       backgroundColor:'white'
-//     },
-//     cardTitle:{
-//       color: 'black',
-//       fontSize: 15,
-//     },
-//     cardText:{
-//       color: 'black',
-//       fontSize: 20,
-//       fontWeight: 'bold',
-//     },
-//     cardIcon: {
-//       color: 'black',
-//     },  
-//   });
+// const styles = StyleSheet.create({
+//   card: {
+//     margin: 10,
+//     padding: 20,
+//     backgroundColor: '#fff',
+//     borderRadius: 20,
+//     alignItems: 'center',
+//     width: 250, // Ajuste conforme necessário
+//   },
+//   icon: {
+//     fontSize: 20, // Aumente o tamanho do ícone se necessário
+//   },
+//   title: {
+//     fontSize: 15, // Aumente o tamanho do título
+//     marginVertical: 10,
+//   },
+//   text: {
+//     fontSize: 20, // Aumente o tamanho do texto principal
+//   },
+// });
 
 // export default MainCard;
 
 
-const MainCard = ({ icon, title, texto, colorTexte }) => {
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function MainCard({ icon, title, texto, colorTexte }) {
   return (
-    <View style={[styles.card, { width: '80%' }]}>
+    <View style={[styles.card, { borderColor: colorTexte }]}>
       <Text style={[styles.icon, { color: colorTexte }]}>{icon}</Text>
-      <Text style={styles.title}>{title}</Text>
-      <Text style={[styles.text, { color: colorTexte }]}>{texto}</Text>
+      <Text style={[styles.title, { color: colorTexte }]}>{title}</Text>
+      <Text style={styles.text}>{texto}</Text>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   card: {
-    margin: 10,
-    padding: 20,
     backgroundColor: '#fff',
-    borderRadius: 20,
+    borderRadius: 10,
+    borderWidth: 2,
+    padding: 20,
+    marginVertical: 10,
+    width: '90%',
     alignItems: 'center',
-    width: 250, // Ajuste conforme necessário
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
   },
   icon: {
-    fontSize: 20, // Aumente o tamanho do ícone se necessário
+    fontSize: 40,
   },
   title: {
-    fontSize: 15, // Aumente o tamanho do título
+    fontSize: 18,
+    fontWeight: 'bold',
     marginVertical: 10,
   },
   text: {
-    fontSize: 20, // Aumente o tamanho do texto principal
+    fontSize: 16,
   },
 });
-
-export default MainCard;

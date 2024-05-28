@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
         padding: 10
       },
       buttonSubmit: {
-        backgroundColor: '#59BFFF',
+        backgroundColor: '#32a852',
         width: '90%',
         height: 45,
         alignItems: 'center',

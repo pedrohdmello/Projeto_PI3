@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Image, TouchableOpacity, TextInput, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import { styles } from './styles';
+import Imagem from '../components/Imagem';
 
 export default function Login({navigation}){
 
@@ -25,12 +26,12 @@ export default function Login({navigation}){
    
   }
     return(
-            <View style={styles.Container}>
-                <View style={styles.UserImage} >
-                    <Image source={require('../../../assets/user-blue.png')}
-                    style={styles.Image}  />
-                </View>
-                <View style={styles.form} >
+        <View style={styles.Container}>
+        {/* Utilize o componente Imagem para exibir a imagem */}
+        <View style={styles.UserImage}>
+          <Imagem source={require('../../../assets/planta3.jpg')} style={styles.Image} />
+        </View>
+        <View style={styles.form}>
                     <TextInput style={styles.input} placeholder='Nome'
                     autoCapitalize='none'
                     maxLength={20}
@@ -44,10 +45,10 @@ export default function Login({navigation}){
                     onChangeText={setPassword}
                     placeholderTextColor='#000' />
                     <TouchableOpacity style={styles.buttonSubmit} onPress={Logar} >
-                        <Text style={styles.textButton}>LOGIN</Text>
+                        <Text style={styles.textButton}>ENTRAR</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('createuser')} >
-                        <Text style={styles.ButtonCreate} >SIGN UP</Text>
+                        <Text style={styles.ButtonCreate} >CADASTRAR-SE</Text>
                     </TouchableOpacity>
                 </View>
             </View>
