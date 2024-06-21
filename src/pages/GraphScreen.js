@@ -107,6 +107,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { PieChart, LineChart } from 'react-native-chart-kit';
 import { Dimensions } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
+import Svg, { Rect, Text as SvgText } from 'react-native-svg';
 
 const screenWidth = Dimensions.get('window').width;
 
@@ -313,9 +314,3 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 });
-
-
-
-
-
-
